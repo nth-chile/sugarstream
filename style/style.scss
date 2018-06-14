@@ -1,0 +1,226 @@
+$offwhite: rgb(214, 214, 214);
+$blue: rgb(37, 62, 95);
+
+html {
+  background-color: $blue;
+  white-space: nowrap;
+}
+body {
+  margin: 0;
+  font-family: 'Inconsolata', monospace;
+  font-size: 19px;
+}
+header {
+  background-color: $offwhite;
+  padding-left: 30px;
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  z-index: 2;
+  h1 {
+    display: inline-block;
+    margin: 15px 0;
+    color: $blue;
+  }
+}
+.header__title {
+  text-align: center;
+  width: 90%;
+}
+a {
+  color: $offwhite;
+  text-decoration: none;
+}
+.list {
+  background-color: $blue;
+  margin: 70px 0 75px 0;
+  padding: 0;
+  &.no-margin {
+    margin-bottom: 0;
+  }
+}
+.list__item {
+  list-style: none;
+  border-bottom: 1px solid black;
+  height: 75px;
+  overflow: hidden;
+  padding: 0 30px;
+  a,
+  p {
+    line-height: 75px;
+    margin: 0;
+    vertical-align: top;
+  }
+  p {
+    display: inline-block;
+    font-family: Consolas, monaco, monospace;
+  }
+  p:last-child {
+    cursor: default;
+    position: absolute;
+    right: 30px;
+  }
+  &:hover {
+    background-color: rgba(43, 67, 100, 0.2);
+    //     $offwhite: rgb(212, 57, 57);
+    // $blue: rgb(37, 62, 95);
+  }
+}
+.list__item__link {
+  cursor: pointer;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(100% - 51px);
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+  }
+}
+.list__item__duration {
+  line-height: 75px;
+  float: right;
+}
+.player {
+  background-color: white;
+  border-top: 1px solid black;
+  position: fixed;
+  bottom: 0;
+  height: 75px;
+  width: 100%;
+}
+.button {
+  border: none;
+  padding: 0;
+  position: relative;
+  &:not(.button__back) {
+    cursor: default;
+    transform: translateY(6px);
+    height: 54px;
+    width: 40px;
+    margin: 4px;
+  }
+  &:active,
+  &:focus {
+    outline: none;
+  }
+}
+.button__wrap {
+  display: inline-block;
+  float: left;
+  height: 100%;
+}
+.hidden {
+  display: none;
+}
+.button__back {
+  background-color: transparent;
+  border: none;
+  color: $blue;
+  cursor: pointer;
+  height: 1em;
+  &:hover {
+    border-bottom: 2px solid $blue;
+  }
+}
+.button__prev {
+  background: url('../img/controls.svg') -15px 0px;
+  background-size: cover;
+  display: none;
+  @media all and (min-width: 425px) {
+    display: inline-block;
+  }
+}
+.button__play {
+  background: url('../img/controls.svg') -127px 0px;
+  background-size: cover;
+}
+.button__play.playing {
+  background: url('../img/controls.svg') -75px 0px;
+  background-size: cover;
+}
+.button__next {
+  background: url('../img/controls.svg') -185px 0px;
+  background-size: cover;
+}
+.player__duration {
+  display: none;
+  @media all and (min-width: 425px) {
+    display: inline;
+  }
+}
+.player__bar {
+  background-color: $blue;
+  border-radius: 3px;
+  bottom: 20px;
+  position: absolute;
+  width: 100%;
+}
+.player__progress {
+  background-color: $offwhite;
+  border-radius: 3px 0 0 3px;
+  height: 10px;
+  width: 0;
+}
+.player__data {
+  overflow: hidden;
+  display: inline-block;
+  margin-left: 8px;
+  height: 100%;
+  position: relative;
+  width: calc(100% - 120px);
+  @media all and (min-width: 425px) {
+    width: calc(100% - 170px);
+  }
+}
+.player__data__setting {
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  @media all and (min-width: 425px) {
+    width: calc(100% - 115px);
+  }
+}
+.player__data__time {
+  display: none;
+  position: absolute;
+  right: 17px;
+  bottom: 36px;
+  @media all and (min-width: 425px) {
+    display: inline-block;
+  }
+}
+.player__date {
+  display: none;
+  position: relative;
+  top: -4px;
+  @media all and (min-width: 425px) {
+    display: inline;
+  }
+}
+.player__venue {
+  display: none;
+  position: relative;
+  top: -4px;
+  @media all and (min-width: 425px) {
+    display: inline;
+  }
+}
+.player__title {
+  display: inline-block;
+  font-size: 1.5rem;
+  margin-top: 15px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 100%;
+  @media all and (min-width: 425px) {
+    width: auto;
+  }
+}
+.player__title span {
+  font-family: Consolas, monaco, monospace;
+  margin-left: 18px;
+}

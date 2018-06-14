@@ -1,0 +1,3 @@
+_excluded/
+node_modules/
+build-db/.env

@@ -1,0 +1,59 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>Bobtunes</title>
+
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="style/normalize.css">
+        <link rel="stylesheet" type="text/css" href="style/style.css">
+        <link href="https://fonts.googleapis.com/css?family=Inconsolata:700|Open+Sans" rel="stylesheet">
+    </head>
+    <body>
+        <!--[if lte IE 9]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
+        <![endif]-->
+        <header class='header'>
+            <h1><button class='button button__back'>&laquo;</button></h1>
+            <h1 class='header__title'></h1>
+        </header>
+        <ul class='list no-margin'></ul>
+
+        <div class='player hidden'>
+            <div class='button__wrap'>
+                <button class='button button__prev'></button><button class='button button__play'></button><button class='button button__next'></button>
+            </div>
+            <div class="player__data">
+
+                <div class='player__data__setting'>
+                    <span class="player__title"></span>
+                    <span class="player__date"></span>
+                    <span class="player__venue"></span>
+                </div>
+
+                <div class='player__data__time'>
+                    <span class="player__elapsed"></span>/<span class="player__duration"></span>
+                </div>
+
+                <div class="player__bar">
+                    <div class="player__progress"></div>
+                </div>
+
+            </div> <!-- .player__data -->
+        </div>
+
+        <audio autoplay src='#'></audio>
+
+        <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+        <script>window.jQuery || document.write('<script src="scripts/vendor/jquery-3.2.1.min.js"><\/script>')</script>
+        <script src='scripts/Event.js'></script>
+        <script src='scripts/Model.js'></script>
+        <script src='scripts/View.js'></script>
+        <script src='scripts/Controller.js'></script>
+        <script src='scripts/main.js'></script>
+
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    </body>
+</html>
