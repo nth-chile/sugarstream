@@ -1,24 +1,28 @@
-For adding an entry, set vars at the top of these scripts and run them (in this order):
 
-scrapeSugarMegs.js <-- make sure no lengths are 0. this will stop the iteration. if this happens, check otu the identifiers folder. remove empties from build-smdb array.
+
+### Adding an entry ###
+
+To add an entry, set config vars at the top of these scripts and run them (in this order):
+
+scrapeSugarMegs.js
+  Make sure in the output that you never see "length: 0". If the `build-smdb` script sees this, it will stop early. If this happens, either fix `build-smdb` so it continues if 0, or check out the files in the identifiers folder. If any of the ones you added are empty, remove them from the from build-smdb `ENTRIES` array.
 build-smdb.js
 pullDateFromTitle.js
 
-Then check out all entries that don't have tracks `db.getCollection("bob-dylan").find({tracks: []})`
+Then check out all entries that don't have tracks:
+  `db.getCollection("bob-dylan").find({tracks: []})`
 
-Check out all entries that don't have .mp3s `db.getCollection("bob-dylan").find({ tracks : { $not: { $elemMatch: { uri : { $regex : /.mp3$/ } } } } })`
-I haven't had to do any conversions yet. But keep in mind this DB is shaped for archive.org entries only ..
+Check out all entries that don't have .mp3s:
+  `db.getCollection("bob-dylan").find({ tracks : { $not: { $elemMatch: { uri : { $regex : /.mp3$/ } } } } })`
+
+I haven't had to do any conversions yet. But keep in mind this app is shaped for archive.org entries ..
 
 
-
-FOR BOB DYLAN
-
-band
+P.S. add this item to Bob Dylan: band
 
 
 REDO BECAUSE THESE ARE EMPTY
 
-GeorgeClintonPGeorgeClintonP-FunkAllstars
 JerryGarciaComesATime
 jgb-sleepyhollowhogstompers
 Pink Floyd (this is actually a big one you just forgot the dash)
