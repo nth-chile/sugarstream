@@ -1,0 +1,1 @@
+{"identifiers":["CarlosSantana2006-06-23","CarlosSantana2009-02-25VinaDelMarChile","CarlosSantana2010-04-21HardRockHotelLasVegasNV","CarlosSantana2014-04-25JazzfestNOLA","CarlosSantana2014-08-16TheArenaAtRosemontIL","CarlosSantana2015-03-19SelenaAuditoriumCorpusChristiTX"]}

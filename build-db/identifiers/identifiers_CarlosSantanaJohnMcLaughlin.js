@@ -1,0 +1,1 @@
+{"identifiers":["CarlosSantanaJohnMcLaughlin1973-09-07LoveDevotionSurrenderTour","CarlosSantanaJohnMcLaughlin1973-09-12CelebrityTheatrePhoenixAZ","CarlosSantanaJohnMcLaughlin1973-08-30CincinnatiOH","CarlosSantanaJohnMcLaughlin1973-08-28BostonMusicHallMA"]}

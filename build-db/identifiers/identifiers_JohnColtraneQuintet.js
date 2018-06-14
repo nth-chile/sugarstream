@@ -1,0 +1,1 @@
+{"identifiers":["JohnColtraneQuintet1965-08-15TheDownBeatJazzFestivalSoldierFieldChicagoIL","JohnColtraneQuintet1966-07-02NewportJazzFestivalRI","JohnColtraneQuintet1961-07-01NewportJazzFestivalRI","JohnColtraneQuintet1961-07-01MusicAtNewportRI"]}

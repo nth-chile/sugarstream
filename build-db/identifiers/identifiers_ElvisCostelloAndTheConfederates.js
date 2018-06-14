@@ -1,0 +1,1 @@
+{"identifiers":["ElvisCostelloAndTheConfederates1987-11-12MunicipalAuditoriumNOLA","ElvisCostelloAndTheConfederates1987-11-09CainsBallroomTulsaOK","ElvisCostelloAndTheConfederates1987-12-12ThebartonTheatreAdelaideAustralia"]}

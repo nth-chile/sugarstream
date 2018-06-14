@@ -1,0 +1,1 @@
+{"identifiers":["GeorgeClintonParliamentFunkadelic1989-11-26CityGardensTrentonNJ","GeorgeClintonParliamentFunkadelic2011-04-25ThePalaceMelbourneVictoriaAustralia","GeorgeClintonParliamentFunkadelic2014-07-31RockefellerOsloNorge","GeorgeClintonParliamentFunkadelic2006-07-08EstivalJazzLuganoSwitzerland","GeorgeClintonParliamentFunkadelic1994-05-03MauiPhiladelphiaPA"]}

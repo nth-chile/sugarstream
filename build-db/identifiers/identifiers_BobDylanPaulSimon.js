@@ -1,0 +1,1 @@
+{"identifiers":["BobDylanPaulSimon1999-06-13GorgeAmphitheaterColumbiaRiverGorgeWA","BobDylanPaulSimon1999-09-09DeerCreekMusicCenterNoblesvilleIN","BobDylanPaulSimon1999-07-07SkakoppeMN","BobDylanPaulSimon1999-07-09TinleyParkIL","BobDylanPaulSimon1999-06-16SacramentoCA","BobDylanPaulSimon1999-07-17EntertainmentCenter","BobDylanPaulSimon1999-06-06WorldArenaColoradoSpringsCO"]}

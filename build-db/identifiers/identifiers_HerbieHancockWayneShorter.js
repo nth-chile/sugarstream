@@ -1,0 +1,1 @@
+{"identifiers":["HerbieHancockWayneShorter1997-09-04SaratogaCA","HerbieHancockWayneShorter1997-10-07McCarterTheatrerPrincetonNJ","HerbieHancockWayneShorter2004-06-19TheMasonicAuditoriumSanFranciscoCA","HerbieHancockWayneShorter2016-04-24NewOrleansJazzFestivalNOLA"]}

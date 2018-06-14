@@ -1,0 +1,59 @@
+// This is a list of documents that have audio files, but no mp3
+
+{
+  "_id": ObjectId("5b215a30acc5f9661ec9177b"),
+  "date": ISODate("2015-03-12T04:00:00Z"),
+  "dir": "/29/items/ElvisCostello2015-03-12CivicTheatreNOLA",
+  "tracks": [
+    {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA.afpk"
+    }, {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA.asx"
+    }, {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA.html"
+    }, {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA.png"
+    }, {
+      "duration": "8582.31",
+      "title": "SugarMegs Audio",
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA.wma"
+    }, {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA_files.xml"
+    }, {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA_meta.sqlite"
+    }, {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA_meta.xml"
+    }, {
+      "duration": null,
+      "title": null,
+      "track": null,
+      "uri": "ElvisCostello2015-03-12CivicTheatreNOLA_rules.conf"
+    }
+  ],
+  "server": "ia800504.us.archive.org",
+  "subject": null,
+  "title": "ElvisCostello2015-03-12CivicTheatreNOLA",
+  "venue": null
+}

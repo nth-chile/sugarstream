@@ -1,0 +1,1 @@
+{"identifiers":["HerbieHancockChickCorea1979-06-16PlayboyJazzFestivalHollywoodBowlCA","HerbieHancockChickCorea2013-07-12PerugiaArenaSantaGiulinaItaly","HerbieHancockChickCorea2015-04-11AcademyOfTheArtsPhiladelphiaPA","HerbieHancockChickCorea2015-07-04TheatreDeOlympiaParisFrance","HerbieHancockChickCorea2015-07-12JazzAJuanAntibesJuanLesPinsFrance"]}
