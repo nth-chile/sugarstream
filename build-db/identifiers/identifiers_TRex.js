@@ -1,0 +1,1 @@
+{"identifiers":["TRex1973-05-01InConcertSantaMonicaCA","TRex1972-09-12AquariusTheaterBostonMA","TRex1972-01-28ChateauNeufOsloNorway","TRex1973-07-26BostonGardenMA","TRex2013-02-20ColosSaalAschaffenburgGermany","TRex1972-02-24AuditoriumChicagoIL","TRex1974-10-08DonKirchnersRockConcertLongBeachCA"]}

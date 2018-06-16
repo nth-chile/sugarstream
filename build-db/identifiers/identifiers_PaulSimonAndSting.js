@@ -1,0 +1,1 @@
+{"identifiers":["PaulSimonAndSting2014-02-09TheCenterAtDallasTX","PaulSimonAndSting2014-02-19OnStageTogetherKeyArenaSeattleWA","PaulSimonAndSting2014-03-13TheCenterWashingtonDC","PaulSimonAndSting2015-02-13SydneyEntertainmentCentreAustralia","PaulSimonAndSting2015-03-16TheWorldBerlinGermany","PaulSimonAndSting2015-04-15TheArenaLondonUK"]}

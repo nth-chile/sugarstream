@@ -1,0 +1,1 @@
+{"identifiers":["IggyPopAndSonicsRendezvousBand1978Europe","IggyPopAndSonicsRendezvousBand1978-05-22KulturialtoHelsinkiFinland"]}

@@ -1,31 +1,6 @@
 // This gets all archive.org identifiers from sugarmegs based on the ENTRY variable you define below. This writes them to identifiers_ENTRY.js
 var ENTRIES = [
-  "GeorgeClintoAndTheP-FunkAllstars",
-  "georgeclinton",
-  "GeorgeClintonAndAndPFunk",
-  "GeorgeClintonAndParliament",
-  "GeorgeClintonAndParliamentFunkadelic",
-  "GeorgeClintonAndParliament-Funkadelic",
-  "GeorgeClintonAndParliment",
-  "GeorgeClintonAndParlimentFunkadelic",
-  "GeorgeClintonAndParlimentFunkadelics",
-  "GeorgeClintonAndPFunk",
-  "GeorgeClintonAndP-Funk",
-  "GeorgeClintonAndTheParliamentFunkadelic",
-  "GeorgeClintonAndTheParliamentFunkadelicAllStars",
-  "GeorgeClintonAndThePFunkAllstars",
-  "GeorgeClintonAndTheP-FunkAllstars",
-  "GeorgeClintonAndTheP-FunkAll-Stars",
-  "GeorgeClintonAndThePFunkAllStars4",
-  "GeorgeClintonParliament",
-  "GeorgeClintonParliamentFunkadelic",
-  "GeorgeClintonParliamentFunkadelicAndTheFamilyStone",
-  "GeorgeClintonParlimentFunkadelic",
-  "GeorgeClintonP-FunkAllstars",
-  "funkadelic",
-  "Parliament",
-  "ParliamentFunkadelic",
-  "parlimentfunkadelic"
+  "RollingThunderRevue"
 ]
 
 var counta = 0
@@ -46,7 +21,7 @@ let scrape = async () => {
 
     await page.goto('http://tela.sugarmegs.org/bands.aspx');
     await page.select('body > form > select', ENTRY)
-    await page.waitFor(6000)
+    await page.waitFor(3500)
     const result = await page.evaluate(
       () => {
         try {
@@ -72,6 +47,10 @@ let scrape = async () => {
 
 var thenn = (output) => {
     console.log("length: ", output.identifiers.length);
+
+    if (output.identifiers.length == 0) {
+      console.log("output:", output)
+    }
 
     fs.writeFile(`./identifiers/identifiers_${ENTRY}.js`, JSON.stringify(output),function(err) {
         if(err) return console.log(err);

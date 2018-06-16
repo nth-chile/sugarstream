@@ -1,0 +1,1 @@
+{"identifiers":["PaulSimonSting2014-03-09GiantCenterHersheyPA","PaulSimonSting2014-03-15TheCenterAtFortLauderdaleFL","PaulSimonSting2015-03-25TheArenaAtCologneGermany","PaulSimonSting2015-04-01WienerStadthalleViennaAustria","PaulSimonSting2015-04-18ZiggoDomeAmsterdamHolland"]}

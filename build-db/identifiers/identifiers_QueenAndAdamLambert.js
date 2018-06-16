@@ -1,0 +1,1 @@
+{"identifiers":["QueenAndAdamLambert2016-06-19LifeFestivalOswiecimPoland","QueenAndAdamLambert2016-09-21NipponBudokanTokyoJapan","QueenAndAdamLambert2017-07-04RogersPlaceEdmontonCanada","QueenAndAdamLambert2017-07-21AnArenaInClevelandOH"]}

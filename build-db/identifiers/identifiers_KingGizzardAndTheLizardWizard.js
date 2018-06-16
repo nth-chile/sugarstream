@@ -1,0 +1,1 @@
+{"identifiers":["KingGizzardAndTheLizardWizard2016-05-07IndianapolisIN","KingGizzardAndTheLizardWizard2015-09-13JohnnyBrendasPhiladelphiaPA","KingGizzardAndTheLizardWizard2017-11-29GovernorHindmarshHotelAdelaideAustralia","KingGizzardAndTheLizardWizard2018-03-11NeueTheaterfabrikMunichGermany"]}

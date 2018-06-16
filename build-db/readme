@@ -9,20 +9,10 @@ scrapeSugarMegs.js
 build-smdb.js
 pullDateFromTitle.js
 
-Then check out all entries that don't have tracks:
-  `db.getCollection("bob-dylan").find({tracks: []})`
+Then remove any entries that don't have tracks:
+  `db.getCollection("bob-dylan").remove({tracks: []})`
 
 Check out all entries that don't have .mp3s:
   `db.getCollection("bob-dylan").find({ tracks : { $not: { $elemMatch: { uri : { $regex : /.mp3$/ } } } } })`
 
 I haven't had to do any conversions yet. But keep in mind this app is shaped for archive.org entries ..
-
-
-P.S. add this item to Bob Dylan: band
-
-
-REDO BECAUSE THESE ARE EMPTY
-
-JerryGarciaComesATime
-jgb-sleepyhollowhogstompers
-Pink Floyd (this is actually a big one you just forgot the dash)

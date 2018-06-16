@@ -1,34 +1,11 @@
 // This builds the database in a forgiving way that pulls in as much as possible, setting things to undefined when not available. Db still should be improved by other scripts, like pulling dates out of titles.
 
 var ENTRIES = [
-  "GeorgeClintoAndTheP-FunkAllstars",
-  "georgeclinton",
-  "GeorgeClintonAndAndPFunk",
-  "GeorgeClintonAndParliament",
-  "GeorgeClintonAndParliamentFunkadelic",
-  "GeorgeClintonAndParliament-Funkadelic",
-  "GeorgeClintonAndParliment",
-  "GeorgeClintonAndParlimentFunkadelic",
-  "GeorgeClintonAndParlimentFunkadelics",
-  "GeorgeClintonAndPFunk",
-  "GeorgeClintonAndP-Funk",
-  "GeorgeClintonAndTheParliamentFunkadelic",
-  "GeorgeClintonAndTheParliamentFunkadelicAllStars",
-  "GeorgeClintonAndThePFunkAllstars",
-  "GeorgeClintonAndTheP-FunkAllstars",
-  "GeorgeClintonAndTheP-FunkAll-Stars",
-  "GeorgeClintonAndThePFunkAllStars4",
-  "GeorgeClintonParliament",
-  "GeorgeClintonParliamentFunkadelic",
-  "GeorgeClintonParliamentFunkadelicAndTheFamilyStone",
-  "GeorgeClintonParlimentFunkadelic",
-  "GeorgeClintonP-FunkAllstars",
-  "funkadelic",
-  "Parliament",
-  "ParliamentFunkadelic",
-  "parlimentfunkadelic"
+"RollingThunderRevue"
 ]
-const COLLECTION = 'george-clinton'
+
+const COLLECTION = "bob-dylan"
+
 var counta = 0
 
 var ENTRY = ENTRIES[counta]

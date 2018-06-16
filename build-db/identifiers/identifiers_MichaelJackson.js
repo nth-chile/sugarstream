@@ -1,0 +1,1 @@
+{"identifiers":["MichaelJackson1987-09-27YokohamaStadiumJapan","MichaelJackson1989-01-27LosAngelesCA","MichaelJackson1988-06-05FeijenoordStadionRotterdamHolland","MichaelJackson1992-09-13HippodromeDeVincennesParisFrance"]}

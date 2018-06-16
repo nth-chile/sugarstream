@@ -1,0 +1,1 @@
+{"identifiers":["IggyPopAndSonicsRendezvous1978-05-10SalleDesFettesVitrollesFrance","IggyPopAndSonicsRendezvous1978-05-16PabellonDelJuventusBadalonaBarcelonaSpain"]}

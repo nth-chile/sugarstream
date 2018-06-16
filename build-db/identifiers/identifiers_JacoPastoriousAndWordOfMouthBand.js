@@ -1,0 +1,1 @@
+{"identifiers":["JacoPastoriousAndWordOfMouthBand1983-07-16NiceJazzFestivalFrance","JacoPastoriousAndWordOfMouthBand1983-07LeCasinoParisFrance","JacoPastoriousAndWordOfMouthBand1983-07-08KristianstadJazzFestivalSweden","JacoPastoriousAndWordOfMouthBand1983-07-17VitoriaJazzFestivalVitoriaSpain","JacoPastoriousAndWordOfMouthBand1983-07-11MuseumVonMeisterwerkenMunichGermany"]}

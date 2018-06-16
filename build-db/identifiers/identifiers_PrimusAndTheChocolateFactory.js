@@ -1,0 +1,1 @@
+{"identifiers":["PrimusAndTheChocolateFactory2014-10-25BostonMA","PrimusAndTheChocolateFactory2015-09-18PalaceOfFineArtsSanFranciscoCA","PrimusAndTheChocolateFactory2015-09-12NorthernAlbertaJubileeAuditoriumCanada","PrimusAndTheChocolateFactory2015-09-14StanleyParkVancouverCanada"]}

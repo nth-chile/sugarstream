@@ -1,0 +1,1 @@
+{"identifiers":["EttaJamesAndTheRootsBand1989-03-13GuthrieTheaterMinneapolisMN","EttaJamesAndTheRootsBand1992-10-14NancyJazzPulsationsFestivalFrance","EttaJamesAndTheRootsBand1995-08-03WesternSpeedwayVictoriaCanada"]}

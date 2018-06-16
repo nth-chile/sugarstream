@@ -1,0 +1,1 @@
+{"identifiers":["DavidByrneAndStVincent2012-10-11ArlingtonTheaterSantaBarbaraCA","DavidByrneAndStVincent2013-06-16BonarooManchesterTN","DavidByrneAndStVincent2013-07-13DenverBotanicalGardensCO","DavidByrneAndStVincent2013-08-28SymphonyHallBirminghamUK","DavidByrneAndStVincent2013-08-29GlasgowRoyalConcertHallScotland","DavidByrneAndStVincent2013-07-12CrossroadsKCKansasCityMO"]}
