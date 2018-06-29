@@ -46,12 +46,9 @@ app.get('/api/:collection/:year', function(req, res) {
   getShows(res, req.params.collection, req.params.year)
 })
 
-// app.get('/api/:collection/:year/:show', function (req, res) {
-// 	let year = req.params.year;
-// 	let month = req.params.show.slice(0, 2);
-// 	let day = req.params.show.slice(-2);
-// 	getTracks(res, year, month, day);
-// });
+app.get('/api/:collection/:year/:show', function(req, res) {
+  getShows(res, req.params.collection, req.params.year)
+})
 
 app.get('*', function(req, res) {
   res.sendFile(__dirname + '/index.html')

@@ -1,8 +1,10 @@
 $offwhite: rgb(214, 214, 214);
-$blue: rgb(37, 62, 95);
+$red: rgb(222,42,46);
+$blue: rgb(30,168,224);
+$yellow: rgb(254,206,48);
 
 html {
-  background-color: $blue;
+  background-color: #000;
   white-space: nowrap;
 }
 body {
@@ -11,8 +13,12 @@ body {
   font-size: 19px;
 }
 header {
-  background-color: $offwhite;
-  padding-left: 30px;
+  display: flex;
+  align-items: center;
+  background-color: $red;
+  box-sizing: border-box;
+  justify-content: space-between;
+  padding: 0 30px;
   position: fixed;
   top: 0;
   height: 70px;
@@ -21,7 +27,7 @@ header {
   h1 {
     display: inline-block;
     margin: 15px 0;
-    color: $blue;
+    color: $yellow;
   }
 }
 .header__title {
@@ -29,11 +35,11 @@ header {
   width: 90%;
 }
 a {
-  color: $offwhite;
+  color: #fff;
   text-decoration: none;
 }
 .list {
-  background-color: $blue;
+  background-color: #000;
   margin: 70px 0 75px 0;
   padding: 0;
   &.no-margin {
@@ -43,12 +49,11 @@ a {
 .list__item {
   list-style: none;
   border-bottom: 1px solid black;
-  height: 75px;
+  height: 55px;
   overflow: hidden;
-  padding: 0 30px;
   a,
   p {
-    line-height: 75px;
+    line-height: 59px;
     margin: 0;
     vertical-align: top;
   }
@@ -73,15 +78,21 @@ a {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  width: calc(100% - 51px);
+  width: 100%;
+  padding: 0 95px 0 30px;
+  box-sizing: border-box;
+
+
   &:hover,
   &:focus {
     text-decoration: underline;
   }
 }
 .list__item__duration {
-  line-height: 75px;
-  float: right;
+  color: #fff;
+  line-height: 59px;
+  position: absolute;
+  right: 30px;
 }
 .player {
   background-color: white;
@@ -111,6 +122,10 @@ a {
   display: inline-block;
   float: left;
   height: 100%;
+
+  button {
+    cursor: pointer;
+  }
 }
 .hidden {
   display: none;
@@ -120,9 +135,12 @@ a {
   border: none;
   color: $blue;
   cursor: pointer;
-  height: 1em;
+  font-size: 2em;
+  line-height: 33px;
+
   &:hover {
     border-bottom: 2px solid $blue;
+    transform: translateY(1px);
   }
 }
 .button__prev {
@@ -145,6 +163,68 @@ a {
   background: url('../img/controls.svg') -185px 0px;
   background-size: cover;
 }
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  padding-top: 100px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+.modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    text-align: center;
+    width: 80%;
+    max-width: 560px;
+    white-space: normal;
+
+    a {
+      color: black;
+      text-decoration: underline;
+    }
+}
+
+#modal-1-btn {
+  background-color: transparent;
+  border: none;
+  color: white;
+  cursor: pointer;
+  outline: none;
+  padding: 0;
+
+  &:hover {
+    border-bottom: 2px solid rgb(30,168,224);
+    transform: translateY(1px);
+  }
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
 .player__duration {
   display: none;
   @media all and (min-width: 425px) {
@@ -152,7 +232,7 @@ a {
   }
 }
 .player__bar {
-  background-color: $blue;
+  background-color: #000;
   border-radius: 3px;
   bottom: 20px;
   position: absolute;

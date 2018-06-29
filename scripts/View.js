@@ -133,6 +133,7 @@ View.prototype = {
   },
   trackSelectedFromHash: function(hash) {
     let selectedTrackName = hash.slice( hash.lastIndexOf('/') + 1 )
+
     this.elements.$list.find('.list__item__link').each((index, item) => {
       item = item.toString()
       let itemName = item.slice( item.lastIndexOf('/') + 1 )
@@ -172,7 +173,127 @@ View.prototype = {
     } else if (data.type == 'collectionList') {
       this.elements.$list.html('')
 
-      data.payload.forEach(collection => {
+      let collections = data.payload.map((item) => {
+        let map = {
+          "alabama-shakes": "Alabama Shakes",
+          "allen-ginsberg": "Allen Ginsberg",
+          "arlo-guthrie": "Arlo Guthrie",
+          "bb-king": "B.B. King",
+          "bob-dylan": "Bob Dylan",
+          "bob-marley": "Bob Marley",
+          "bruce-springsteen": "Bruce Springsteen",
+          "buzzcocks": "Buzzcocks",
+          "captain-beefheart": "Captain Beefheart",
+          "carlos-santana": "Carlos Santana",
+          "cat-stevens": "Cat Stevens",
+          "chick-corea": "Chick Corea",
+          "creedence-clearwater-revival": "Creedence Clearwater Revival",
+          "dave-matthews-band": "Dave Matthews Band",
+          "david-bowie": "David Bowie",
+          "duke-ellington": "Duke Ellington",
+          "elizabeth-cotten": "Elizabeth Cotten",
+          "elvis-costello": "Elvis Costello",
+          "elvis-presley": "Elvis Presley",
+          "eric-burdon": "Eric Burdon",
+          "eric-clapton": "Eric Clapton",
+          "etta-james": "Etta James",
+          "faces": "Faces",
+          "flaming-lips": "Flaming Lips",
+          "frank-zappa": "Frank Zappa",
+          "george-clinton": "George Clinton",
+          "government-mule": "Government Mule",
+          "grand-funk-railroad": "Grand Funk Railroad",
+          "herbie-hancock": "Herbie Hancock",
+          "hunter-s-thompson": "Hunter S. Thompson",
+          "ian-anderson": "Ian Anderson",
+          "iggy-pop": "Iggy Pop",
+          "jack-kerouac": "Jack Kerouac",
+          "jackson-browne": "Jackson Browne",
+          "jaco-pastorius": "Jaco Pastorius",
+          "jerry-garcia": "Jerry Garcia",
+          "jimi-hendrix": "Jimi Hendrix",
+          "jimmy-cliff": "Jimmy Cliff",
+          "joe-bonamassa": "Joe Bonamassa",
+          "john-lennon": "John Lennon",
+          "johnny-cash": "Johnny Cash",
+          "jon-fishman": "Jon Fishman",
+          "keller-williams": "Keller Williams",
+          "king-crimson": "King Crimson",
+          "king-gizzard-and-the-lizard-wizard": "King Gizzard & The Lizard Wizard",
+          "led-zeppelin": "Led Zeppelin",
+          "leonard-cohen": "Leonard Cohen",
+          "lou-reed": "Lou Reed",
+          "lynyrd-skynyrd": "Lynyrd Skynyrd",
+          "michael-jackson": "Michael Jackson",
+          "mickey-hart": "Mickey Hart",
+          "mike-gordon": "Mike Gordon",
+          "miles-davis": "Miles Davis",
+          "moe": "Moe",
+          "muddy-waters": "Muddy Waters",
+          "neil-young": "Neil Young",
+          "nico": "Nico",
+          "page-mcconnell": "Page McConnell",
+          "paul-simon": "Paul Simon",
+          "pearl-jam": "Pearl Jam",
+          "phil-spector": "Phil Spector",
+          "pink-floyd": "Pink Floyd",
+          "primus": "Primus",
+          "queen": "Queen",
+          "rage-against-the-machine": "Rage Against the Machine",
+          "red-hot-chili-peppers": "Red Hot Chili Peppers",
+          "steve-miller": "Steve Miller",
+          "stevie-wonder": "Stevie Wonder",
+          "sublime": "Sublime",
+          "syd-barrett": "Syd Barrett",
+          "t-rex": "T. Rex",
+          "talking-heads": "Talking Heads",
+          "television": "Television",
+          "tenacious-d": "Tenacious D",
+          "the-allman-brothers-band": "The Allman Brothers Band",
+          "the-b52s": "The B-52s",
+          "the-beatles": "The Beatles",
+          "the-clash": "The Clash",
+          "the-doors": "The Doors",
+          "the-moody-blues": "The Moody Blues",
+          "the-police": "The Police",
+          "the-ramones": "The Ramones",
+          "the-rolling-stones": "The Rolling Stones",
+          "the-white-stripes": "The White Stripes",
+          "the-who": "The Who",
+          "tom-petty": "Tom Petty",
+          "tom-waits": "Tom Waits",
+          "tool": "Tool",
+          "townes-van-zandt": "Townes Van Zandt",
+          "traveling-wilburys": "Traveling Wilburys",
+          "trey-anastasio": "Trey Anastasio",
+          "ub40": "UB40",
+          "warren-haynes": "Warren Haynes",
+          "ween": "Ween",
+          "wilco": "Wilco",
+          "woody-guthrie": "Woody Guthrie",
+          "zakir-hussain": "Zakir Hussain"
+        };
+
+        return { text: map[item.text], href: item.href }
+      });
+
+
+
+      collections.sort((a, b) => {
+        a = a.text.replace(/^the\s/i, '').toUpperCase()
+        b = b.text.replace(/^the\s/i, '').toUpperCase()
+
+        if (a < b) {
+          return -1;
+        }
+        if (a > b) {
+          return 1;
+        }
+        // a must be equal to b
+        return 0;
+      })
+
+      collections.forEach(collection => {
         let $li = $('<li></li>')
         let $a = $('<a></a>')
         $li.addClass('list__item')

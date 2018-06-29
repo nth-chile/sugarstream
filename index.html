@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta http-equiv="x-ua-compatible" content="ie=edge">
-        <title>Bobtunes</title>
+        <title>Sugarstream</title>
 
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -16,8 +16,9 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
         <![endif]-->
         <header class='header'>
-            <h1><button class='button button__back'>&laquo;</button></h1>
-            <h1 class='header__title'></h1>
+            <button class='button button__back'>&laquo;</button>
+            <h1 class='header__title'>Sugarstream</h1>
+            <button id='modal-1-btn'>About</button>
         </header>
         <ul class='list no-margin'></ul>
 
@@ -44,6 +45,15 @@
             </div> <!-- .player__data -->
         </div>
 
+        <!--  Modal -->
+        <div id="modal-1" class="modal">
+          <div class="modal-content">
+            <span class="close">&times;</span>
+            <p>Audio collected by <a target="_blank" href="http://sugarmegs.org/">SugarMegs.</a></p>
+            <p>Contact me at <a target="_top" href="mailto:jaredsalzano@gmail.com">jaredsalzano@gmail.com.</a></p>
+          </div>
+        </div>
+
         <audio autoplay src='#'></audio>
 
         <script src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
@@ -55,5 +65,13 @@
         <script src='scripts/main.js'></script>
 
         <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-105812256-3"></script>
+        <script>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+
+          gtag('config', 'UA-105812256-3');
+        </script>
     </body>
 </html>

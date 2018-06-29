@@ -1,21 +1,24 @@
 {
   "name": "sugarstream",
   "version": "1.0.0",
-  "description": "",
   "engines": {
     "node": "6.11.1"
   },
   "main": "server.js",
   "scripts": {
-    "compile-js": "babel ./scripts -d ./public/scripts -w",
-    "autoprefixer": "postcss ./public/style/style.css --use autoprefixer -o ./public/style/style.css --watch",
-    "dev": "npm run compile-js & sass --watch ./style/style.scss:./public/style/style.css & npm run autoprefixer"
+    "compile-js":         "babel ./scripts -d ./public/scripts -w",
+    "compile-scss":                               "node-sass style/style.scss -o  public/style/style.css",
+    "compile-scss:watch": "npm run compile-scss && node-sass style/style.scss -wo public/style/style.css",
+    "autoprefixer":       "postcss ./public/style/style.css --use autoprefixer -o public/style/style.css --watch",
+    "dev":                "npm run compile-js & npm run compile-scss:watch & npm run autoprefixer",
+    "start":              "node server.js"
   },
   "author": "Jared Salzano",
   "license": "MIT",
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "compression": "^1.7.2",
+    "dotenv": "^5.0.1",
     "express": "^4.16.3",
     "mongod": "^2.0.0",
     "mongodb": "^2.2.35",
@@ -25,8 +28,17 @@
     "autoprefixer": "^8.6.2",
     "babel-cli": "^6.26.0",
     "babel-preset-es2015": "^6.24.1",
-    "dotenv": "^5.0.1",
+    "node-sass": "^4.9.0",
     "postcss-cli": "^5.0.0",
     "puppeteer": "^1.4.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nth-chile/sugarstream.git"
+  },
+  "bugs": {
+    "url": "https://github.com/nth-chile/sugarstream/issues"
+  },
+  "homepage": "https://github.com/nth-chile/sugarstream#readme",
+  "description": ""
 }
