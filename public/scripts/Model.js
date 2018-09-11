@@ -1,5 +1,7 @@
 'use strict';
 
+function _asyncToGenerator(fn) { return function () { var gen = fn.apply(this, arguments); return new Promise(function (resolve, reject) { function step(key, arg) { try { var info = gen[key](arg); var value = info.value; } catch (error) { reject(error); return; } if (info.done) { resolve(value); } else { return Promise.resolve(value).then(function (value) { step("next", value); }, function (err) { step("throw", err); }); } } return step("next"); }); }; }
+
 // But the handlers go in the controller
 
 function Model() {
@@ -25,32 +27,56 @@ Model.prototype = {
       return _this.data = res;
     });
   },
-  selectListItem: async function selectListItem() {
-    var hash = 'api' + (!!window.location.hash.substr(1) ? window.location.hash.substr(1) : '/collections');
+  selectListItem: function () {
+    var _ref = _asyncToGenerator( /*#__PURE__*/regeneratorRuntime.mark(function _callee() {
+      var hash;
+      return regeneratorRuntime.wrap(function _callee$(_context) {
+        while (1) {
+          switch (_context.prev = _context.next) {
+            case 0:
+              hash = 'api' + (!!window.location.hash.substr(1) ? window.location.hash.substr(1) : '/collections');
 
-    console.log(hash);
 
-    /* Possible hashes
-    *  api/collections
-    *  api/:collection-name
-    *  api/:collection-name/:yyyy
-    *  api/:collection-name/:yyyy/:item-name
-    *  api/:collection-name/Unspecified
-    *  api/:collection-name/Unspecified/:item-name
-    */
+              console.log(hash);
 
-    await this.getListData(hash);
-    // this.data is set by getListData
-    this.listItemSelected.notify(this.data);
+              /* Possible hashes
+              *  api/collections
+              *  api/:collection-name
+              *  api/:collection-name/:yyyy
+              *  api/:collection-name/:yyyy/:item-name
+              *  api/:collection-name/Unspecified
+              *  api/:collection-name/Unspecified/:item-name
+              */
 
-    if (
-    // api/:collection-name/:yyyy/:item-name
-    hash.match(/^api\/(.*)\/\d\d\d\d\/(.*)$/) ||
-    // api/:collection-name/Unspecified/:item-name
-    hash.match(/^api\/(.*)\/Unspecified\/(.*)$/)) {
-      this.uriIncludesTrack.notify(hash);
+              _context.next = 4;
+              return this.getListData(hash);
+
+            case 4:
+              // this.data is set by getListData
+              this.listItemSelected.notify(this.data);
+
+              if (
+              // api/:collection-name/:yyyy/:item-name
+              hash.match(/^api\/(.*)\/\d\d\d\d\/(.*)$/) ||
+              // api/:collection-name/Unspecified/:item-name
+              hash.match(/^api\/(.*)\/Unspecified\/(.*)$/)) {
+                this.uriIncludesTrack.notify(hash);
+              }
+
+            case 6:
+            case 'end':
+              return _context.stop();
+          }
+        }
+      }, _callee, this);
+    }));
+
+    function selectListItem() {
+      return _ref.apply(this, arguments);
     }
-  },
+
+    return selectListItem;
+  }(),
   selectNext: function selectNext() {
     this.updateCurrentTrack(this.currentTrack + 1);
   },
