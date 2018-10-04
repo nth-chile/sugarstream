@@ -3,7 +3,7 @@
 
 const COLLECTION = "bob-dylan"
 const REGX = /(\d{2,4})-(\d{1,2})-(\d{1,2})/
-// dude you need to use the regex from smdb script and parse it responsibly.
+// need to use the regex from smdb script and parse it more responsibly.
 
 var MongoClient = require('mongodb').MongoClient;
 require('dotenv').config()
