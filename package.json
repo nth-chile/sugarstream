@@ -2,7 +2,7 @@
   "name": "sugarstream",
   "version": "1.0.0",
   "engines": {
-    "node": "6.11.1"
+    "node": "^12"
   },
   "main": "server.js",
   "scripts": {
@@ -18,18 +18,18 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "compression": "^1.7.2",
-    "dotenv": "^5.0.1",
+    "dotenv": "^8.2.0",
     "express": "^4.16.3",
     "mongod": "^2.0.0",
     "mongodb": "^2.2.35",
     "npm": "^6.1.0"
   },
   "devDependencies": {
-    "autoprefixer": "^8.6.4",
+    "autoprefixer": "^9.7.4",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "node-sass": "^4.9.0",
-    "postcss-cli": "^5.0.1",
+    "postcss-cli": "^7.1.0",
     "puppeteer": "^1.4.0"
   },
   "repository": {
