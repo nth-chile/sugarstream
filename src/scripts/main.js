@@ -1,8 +1,6 @@
-"use strict";
-
-$(document).ready(function () {
-  var model = new Model();
-  var view = new View(model, {
+$(document).ready(function() {
+  const model = new Model();
+  const view = new View(model, {
     $audio: $("audio"),
     $button__next: $(".button__next"),
     $button__play: $(".button__play"),
@@ -10,22 +8,22 @@ $(document).ready(function () {
     $list: $(".list"),
     $player: $(".player")
   });
-  var controller = new Controller(model, view);
+  const controller = new Controller(model, view);
 
   var modal = document.getElementById("modal-1");
   var btn = document.getElementById("modal-1-btn");
   var span = document.getElementsByClassName("close")[0];
 
-  btn.onclick = function () {
+  btn.onclick = function() {
     modal.style.display = "block";
   };
 
-  span.onclick = function () {
+  span.onclick = function() {
     modal.style.display = "none";
   };
 
   // When the user clicks anywhere outside of the modal, close it
-  window.onclick = function (event) {
+  window.onclick = function(event) {
     if (event.target == modal) {
       modal.style.display = "none";
     }

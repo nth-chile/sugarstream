@@ -1,0 +1,10 @@
+{
+  "env": { "DB_URI": "@db_uri" },
+  "routes": [
+    { "src": "/api/collections", "dest": "/api/getCollections.js" },
+    { "src": "/api/[^/]+$", "dest": "/api/getYears.js" },
+    { "src": "/api/[^/]+/[^/]+$", "dest": "/api/getShows.js" },
+    { "src": "/api/[^/]+/[^/]+/[^/]+$", "dest": "/api/getShows.js" }
+  ],
+  "version": 2
+}

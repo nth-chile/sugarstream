@@ -1,7 +1,7 @@
 $offwhite: rgb(214, 214, 214);
-$red: rgb(222,42,46);
-$blue: rgb(30,168,224);
-$yellow: rgb(254,206,48);
+$red: rgb(222, 42, 46);
+$blue: rgb(30, 168, 224);
+$yellow: rgb(254, 206, 48);
 
 html {
   background-color: #000;
@@ -9,7 +9,7 @@ html {
 }
 body {
   margin: 0;
-  font-family: 'Inconsolata', monospace;
+  font-family: "Inconsolata", monospace;
   font-size: 19px;
 }
 header {
@@ -82,7 +82,6 @@ a {
   padding: 0 95px 0 30px;
   box-sizing: border-box;
 
-
   &:hover,
   &:focus {
     text-decoration: underline;
@@ -144,7 +143,7 @@ a {
   }
 }
 .button__prev {
-  background: url('../img/controls.svg') -15px 0px;
+  background: url("../img/controls.svg") -15px 0px;
   background-size: cover;
   display: none;
   @media all and (min-width: 425px) {
@@ -152,15 +151,15 @@ a {
   }
 }
 .button__play {
-  background: url('../img/controls.svg') -127px 0px;
+  background: url("../img/controls.svg") -127px 0px;
   background-size: cover;
 }
 .button__play.playing {
-  background: url('../img/controls.svg') -75px 0px;
+  background: url("../img/controls.svg") -75px 0px;
   background-size: cover;
 }
 .button__next {
-  background: url('../img/controls.svg') -185px 0px;
+  background: url("../img/controls.svg") -185px 0px;
   background-size: cover;
 }
 
@@ -174,23 +173,23 @@ a {
   width: 100%;
   height: 100%;
   overflow: auto;
-  background-color: rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.4);
 }
 
 .modal-content {
-    background-color: #fefefe;
-    margin: auto;
-    padding: 20px;
-    border: 1px solid #888;
-    text-align: center;
-    width: 80%;
-    max-width: 560px;
-    white-space: normal;
+  background-color: #fefefe;
+  margin: auto;
+  padding: 20px;
+  border: 1px solid #888;
+  text-align: center;
+  width: 80%;
+  max-width: 560px;
+  white-space: normal;
 
-    a {
-      color: black;
-      text-decoration: underline;
-    }
+  a {
+    color: black;
+    text-decoration: underline;
+  }
 }
 
 #modal-1-btn {
@@ -202,7 +201,7 @@ a {
   padding: 0;
 
   &:hover {
-    border-bottom: 2px solid rgb(30,168,224);
+    border-bottom: 2px solid rgb(30, 168, 224);
     transform: translateY(1px);
   }
 
@@ -212,17 +211,17 @@ a {
 }
 
 .close {
-    color: #aaaaaa;
-    float: right;
-    font-size: 28px;
-    font-weight: bold;
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
 }
 
 .close:hover,
 .close:focus {
-    color: #000;
-    text-decoration: none;
-    cursor: pointer;
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
 }
 
 .player__duration {
