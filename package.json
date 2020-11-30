@@ -12,7 +12,7 @@
     "autoprefixer": "postcss public/style/style.css --use autoprefixer -o public/style/style.css",
     "watch-autoprefixer": "postcss public/style/style.css --use autoprefixer -o public/style/style.css --watch",
     "build": "cp src/index.html public/index.html && yarn compile-js & yarn compile-scss & yarn autoprefixer",
-    "-dev": "cp src/index.html public/index.html && yarn watch-js & yarn watch-scss & yarn watch-autoprefixer"
+    "dev": "cp src/index.html public/index.html && yarn watch-js & yarn watch-scss & yarn watch-autoprefixer"
   },
   "author": "Jared Salzano",
   "license": "MIT",
