@@ -28,7 +28,7 @@
     "autoprefixer": "^9.7.4",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "node-sass": "^4.9.0",
+    "node-sass": "^7.0.0",
     "postcss-cli": "^7.1.0",
     "puppeteer": "^1.4.0"
   },
