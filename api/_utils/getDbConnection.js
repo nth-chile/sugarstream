@@ -9,6 +9,7 @@ let cachedDb = null;
 // taking a single parameter of the connection string
 const getDbConnection = async () => {
   const { DB_URI } = process.env;
+  
   // If the database connection is cached,
   // use it instead of creating a new connection
   if (cachedDb) {
