@@ -1,9 +1,6 @@
 {
   "name": "sugarstream",
   "version": "1.0.0",
-  "engines": {
-    "node": "12.x"
-  },
   "scripts": {
     "compile-js": "babel ./src/scripts -d ./public/scripts",
     "watch-js": "babel ./src/scripts -d ./public/scripts -w",
@@ -19,14 +16,13 @@
   "dependencies": {
     "babel-polyfill": "^6.26.0",
     "mongodb": "^3.5.4",
-    "npm": "^6.1.0",
+    "node-sass": "^7.0.3",
     "url": "^0.11.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.7.4",
     "babel-cli": "^6.26.0",
     "babel-preset-env": "^1.7.0",
-    "node-sass": "^4.9.0",
     "postcss-cli": "^7.1.0",
     "puppeteer": "^1.4.0"
   }
